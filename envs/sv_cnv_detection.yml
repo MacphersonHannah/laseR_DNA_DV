@@ -1,0 +1,12 @@
+name: sv_cnv_detection
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.8
+  - sniffles=2.0.7  # For structural variation detection
+  - nanovar=1.4.1   # For copy number variation detection
+  - samtools=1.17   # For BAM file operations
+  - bcftools=1.17   # For VCF processing
+  - htslib=1.17     # For general genomic utilities

@@ -1,0 +1,12 @@
+name: whatshap_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.8
+  - whatshap=2.3
+  - bcftools=1.21
+  - samtools
+  - htslib=1.21
+  - minimap2

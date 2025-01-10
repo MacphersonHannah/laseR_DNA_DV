@@ -1,0 +1,5 @@
+# Ignore the Conda environment directory
+envs/long-read_SV_calling/
+
+# Ignore the Snakemake working directory
+.snakemake/

@@ -1,0 +1,46 @@
+#### from laseR_DNA_DV 
+# conda: long-read_SV_calling
+# snakemake --use-conda -j 50 all --verbose 2>&1 | tee snakemake.log
+
+
+
+
+# Set working directory
+workdir: "/home/MRHannahMacpherson/MinaRyten/hannah/240731_AS_SNCA_MAPT_JE_CELLLINES/laseR_DNA/A53T_828_21.12_SW_Barcode02"
+root_workdir: "/home/MinaRyten/"
+# prefix of all output files:
+sample_name: "A53T_828_21.12_SW_Barcode02_laser_DNA"
+
+# Reference genome as fasta
+genome: "/home/MRHannahMacpherson/MinaRyten/Emil/references/GRCh38.primary_assembly.genome.fa"
+
+# concatenated fastq_file
+fastq: "/home/MRHannahMacpherson/MinaRyten/hannah/240731_AS_SNCA_MAPT_JE_CELLLINES/A53T_828_21.12_SW_Barcode02/processed_reads/A53T_828_21.12_SW_Barcode02_reads.fastq"
+
+# Aligner to use (minimap2 or ngmlr; default: minimap2)
+aligner: "minimap2"
+
+# Options passed to minimap2 (optional)
+minimap2_opts: ""
+
+
+# region: "chr4:89720000-89837776" actual region
+#region: "chr4:85078847-100078843" #longer to cover sides
+
+region: "chr4:50078847-140078843"
+
+# Options passed to nglmr (optional)
+ngmlr_opts: ""
+
+# Options passed to sniffles
+sniffles_opts: "--minsvlen 50 --tandem-repeats"
+
+# Sniffles2 supports optionally specifying tandem repeat region annotations (.bed) 
+# Give location of .bed file below and add "--tandem-repeats" at the end of sniffles_opts above
+tandem_repeat_region: "/home/MRHannahMacpherson/MinaRyten/Emil/Snakemakes/long-read_SV_calling/data/human_GRCh38_no_alt_analysis_set.trf.bed"
+
+# threads (optional; default:30)
+threads: 100
+
+num_shards: 30
+deepvariant_bin_version: "1.5.0" 

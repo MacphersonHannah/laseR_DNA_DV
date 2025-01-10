@@ -1,0 +1,48 @@
+#### from laseR_DNA_DV 
+# conda: long-read_SV_calling
+# snakemake --use-conda -j 50 all --verbose 2>&1 | tee snakemake.log
+# updated 09/01/2025 HM
+
+
+
+
+# Set working directory
+workdir: ""
+root_workdir: ""
+
+# prefix of all output files:
+sample_name: ""
+
+# Reference genome as .fa
+genome: ""
+
+# concatenated .fastq (Nanopore)
+fastq: ""
+
+# Aligner to use (minimap2 or ngmlr; default: minimap2)
+aligner: "minimap2"
+
+# Options passed to minimap2 (optional)
+minimap2_opts: ""
+
+
+# eg "chr4:85078847-100078843"
+region: "chr_:_-_"
+
+# Options passed to nglmr (optional)
+ngmlr_opts: ""
+
+# Options passed to sniffles
+sniffles_opts: "--minsvlen 50 --tandem-repeats"
+
+# Sniffles2 supports optionally specifying tandem repeat region annotations (.bed) 
+# Give location of .bed file below and add "--tandem-repeats" at the end of sniffles_opts above
+# File is called human_GRCh38_no_alt_analysis_set.trf.bed
+tandem_repeat_region: ""
+
+# threads (optional; default:30)
+threads: 30
+
+# DeepVariant Options
+num_shards: 30
+deepvariant_bin_version: "1.5.0" 
