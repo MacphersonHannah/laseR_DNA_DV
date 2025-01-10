@@ -3,3 +3,4 @@ envs/long-read_SV_calling/
 
 # Ignore the Snakemake working directory
 .snakemake/
+snakemake.log
