@@ -1,4 +1,4 @@
-# conda: long-read_SV_calling
+# conda: laseR_DNA_DV
 # snakemake --use-conda -j 50 all --verbose 2>&1 | tee snakemake.log
 
 

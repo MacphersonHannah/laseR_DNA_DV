@@ -1,4 +1,4 @@
-name: long-read_SV_calling
+name: laseR_DNA_DV
 channels:
   - conda-forge
   - bioconda

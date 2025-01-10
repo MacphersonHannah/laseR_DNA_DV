@@ -1,7 +1,7 @@
 #### from laseR_DNA_DV 
-# conda: long-read_SV_calling
+# conda: laseR_DNA_DV 
 # snakemake --use-conda -j 50 all --verbose 2>&1 | tee snakemake.log
-# updated 09/01/2025 HM
+# updated 10/01/2025 HM
 
 
 
