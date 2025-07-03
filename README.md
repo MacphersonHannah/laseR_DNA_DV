@@ -1,8 +1,8 @@
 <h1>laseR_DNA_DV: Long-Read Variant Calling Pipeline</h1>
 
-<p><strong>laseR_DNA_DV</strong> is a modular Snakemake pipeline for analyzing long-read DNA sequencing data, with a focus on accurate variant calling using <strong>DeepVariant</strong>. It supports alignment, variant calling via both DeepVariant and Longshot, and optional region-based filtering.</p>
+<p><strong>laseR_DNA_DV</strong> is a modular Snakemake pipeline for analyzing long-read ONT DNA sequencing data, with a focus on accurate variant calling using <strong>DeepVariant</strong>. It supports alignment, variant calling via both DeepVariant and Longshot, and optional region-based filtering (particularly useful for adaptive sampling runs).</p>
 
-<p>Haplotype reference generation and phasing steps are included in the codebase but currently commented out for simplicity. This makes the current version faster and more lightweight.</p>
+<p>Haplotype reference generation and phasing steps are included in the codebase but currently commented out for simplicity.</p>
 
 <hr>
 
