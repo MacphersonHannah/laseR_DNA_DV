@@ -4,6 +4,6 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - bcftools=1.13  # Or any specific version of bcftools you'd like
-  - htslib         # Required for bcftools to work properly
-  - zlib           # Compression library for handling gzipped files
+  - bcftools=1.13
+  - htslib=1.21
+  - zlib=1.2.13

@@ -4,9 +4,11 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - python=3.8
-  - sniffles=2.0.7  # For structural variation detection
-  - nanovar=1.4.1   # For copy number variation detection
-  - samtools=1.17   # For BAM file operations
-  - bcftools=1.17   # For VCF processing
-  - htslib=1.17     # For general genomic utilities
+  - python=3.8 #=3.8.19
+  - sniffles=2.0.7
+  - nanovar=1.4.1
+  - samtools #=1.17
+  - bcftools #=1.17
+  - htslib=1.17
+  - pandas   #=2.0.3
+  - hs-blastn

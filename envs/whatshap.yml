@@ -4,9 +4,9 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - python=3.8
+  - python=3.8.20
   - whatshap=2.3
   - bcftools=1.21
-  - samtools
+  - samtools=1.21
   - htslib=1.21
-  - minimap2
+  - minimap2=2.28
