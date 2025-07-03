@@ -6,7 +6,7 @@
 
 <hr>
 
-<h2>🧰 Tools Used</h2>
+<h2>Tools Used</h2>
 <ul>
   <li><strong>Minimap2</strong> — long-read aligner</li>
   <li><strong>DeepVariant</strong> — deep learning-based variant caller</li>
@@ -17,7 +17,7 @@
 
 <hr>
 
-<h2>🚀 Getting Started</h2>
+<h2>Getting Started</h2>
 
 <h3>1. Prerequisites</h3>
 <ul>
@@ -40,7 +40,7 @@ conda activate laseR_DNA_DV
 
 <hr>
 
-<h2>⚙️ Input Configuration</h2>
+<h2>Input Configuration</h2>
 
 <p>Edit the <code>config.yaml</code> file with your sample-specific details:</p>
 
@@ -66,7 +66,7 @@ conda activate laseR_DNA_DV
 
 <hr>
 
-<h2>🏃 Running the Pipeline</h2>
+<h2>Running the Pipeline</h2>
 
 <p>Run the full workflow:</p>
 
@@ -97,7 +97,7 @@ snakemake --use-conda -j 50 all --dry-run --verbose 2>&1 | tee snakemake_dryrun.
 
 <hr>
 
-<h2>🧾 Output</h2>
+<h2>Output</h2>
 
 <table>
   <thead>
@@ -114,7 +114,7 @@ snakemake --use-conda -j 50 all --dry-run --verbose 2>&1 | tee snakemake_dryrun.
 
 <hr>
 
-<h2>🐛 Troubleshooting</h2>
+<h2>Troubleshooting</h2>
 
 <h3>Missing Dependencies</h3>
 <p>Recreate the Conda environment if something is missing:</p>
