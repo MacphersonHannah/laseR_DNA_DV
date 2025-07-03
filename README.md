@@ -6,6 +6,7 @@
 
 <hr>
 
+
 <h2>Tools Used</h2>
 <ul>
   <li><strong>Minimap2</strong> — long-read aligner</li>
@@ -24,7 +25,29 @@
   <li>Miniconda or Conda</li>
   <li>Snakemake (tested on ≥7.18)</li>
   <li>Singularity (for DeepVariant)</li>
+
+  
 </ul>
+
+<h3>1b. Singularity for DeepVariant</h3>
+
+<p>This pipeline runs DeepVariant using a container — you <strong>do not need to install DeepVariant manually</strong>.</p>
+
+<p>However, you <strong>must install <a href="https://docs.sylabs.io/guides/latest/user-guide/">Singularity</a></strong> and ensure it's working.</p>
+
+<p>Check your setup:</p>
+
+<pre><code class="language-bash">
+conda --version
+singularity --version
+</code></pre>
+
+<p>If <code>singularity</code> is not installed, follow the 
+<a href="https://docs.sylabs.io/guides/latest/user-guide/quick_start.html">official install guide</a>.</p>
+
+<p><strong>Note:</strong> The pipeline will automatically download and run the appropriate DeepVariant container using Singularity. Make sure your <code>config.yaml</code> sets <code>root_workdir</code> to a valid absolute path on your system (this is required for Singularity volume mounting).</p>
+
+
 
 <h3>2. Clone the Repository</h3>
 <pre><code class="language-bash">
